@@ -12,3 +12,5 @@ class Solution:  # Cửa số trượt với kích thước không cố định
                     k += 1  # tức là hồi lại được 1 lần k ở left
                 left += 1  # dịch bên trái đi 1
         return right - left + 1
+
+# https://leetcode.com/problems/max-consecutive-ones-iii/solutions/719833/python3-sliding-window-with-clear-example-explains-why-the-soln-works/
