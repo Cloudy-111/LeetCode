@@ -11,6 +11,8 @@ from collections import defaultdict
 # từ đó, cần 1 dict để lưu trữ tổng đã tính trên mỗi nhánh, key là tổng đến node đó, value là 1 với những tổng đã đến
 # Mỗi nhánh có dict tổng riêng biệt nên sau khi sử dụng xong thì trả lại về 0 để nhánh khác sử dụng
 
+# bài đếm số lượng thì dùng biến tích lũy cnt để tính từ đầu đến cuối và không bị reset
+
 
 class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> int:
