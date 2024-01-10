@@ -1,16 +1,7 @@
-import queue
+from collections import Counter
 
-q = queue.Queue()
-q.put(1)
-q.put(2)
-q.put(3)
-q.put(4)
-q.put(5)
-t = q.get()
-print(t)
-print(q.qsize())
 
-if root.right:
-    self.adj[root.val].add(root.right.val)
-    self.adj[root.right.val].add(root.val)
-    travesal(root.right)
+a = [46, 8, 2, 4, 1, 4, 10, 2, 4, 10, 2, 5, 7, 3, 1]
+dic = Counter(a)
+print(dic[46])
+print(dic)
