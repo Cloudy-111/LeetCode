@@ -1,7 +1,5 @@
-from collections import Counter
-
-
-a = [46, 8, 2, 4, 1, 4, 10, 2, 4, 10, 2, 5, 7, 3, 1]
-dic = Counter(a)
-print(dic[46])
-print(dic)
+a = [3, 4, 5]
+res = a[0]
+for i in range(1, len(a)):
+    res = res ^ a[i]
+print(res)
