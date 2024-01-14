@@ -6,7 +6,7 @@ class Solution:
             # để kiểm tra xem dãy có tăng dần liên tiếp 1 đơn vị hay không
             if nums[i] - 1 == prefix[-1] and i == len(prefix):
                 prefix.append(nums[i])
-        res = sum(prefix)
+        res = (prefix[-1] + prefix[0]) * (prefix[-1] - prefix[0] + 1) // 2
         while dic[res] != 0:  # tìm kết quả nhỏ nhất
             res += 1
         return res
