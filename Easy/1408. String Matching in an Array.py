@@ -8,3 +8,12 @@ class Solution:
                     res.append(words[i])
                     break
         return list(res)
+
+# Time Complexity: O(k * N) với k là tổng số lượng từ ; N là tổng số lượng kí tự trong mảng
+
+
+class Solution:
+    def stringMatching(self, words: List[str]) -> List[str]:
+        total_string = ' '.join(words)
+        res = [s for s in words if total_string.count(s) > 1]
+        return res
