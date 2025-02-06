@@ -9,10 +9,8 @@ class Solution:  # làm với O(n) và không sử dụng phép chia
     # bài dưới rút gọn được 1 bước là tạo mảng suff, kết hợp luôn với tính suffix
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         pre = [1]
-        tmp = 1
         for i in range(len(nums) - 1):
-            tmp *= i
-            pre.append(tmp)
+            pre.append(pre[-1] * nums[i])
         tmp = nums[-1]
         for i in range(len(nums) - 2, -1, -1):
             pre[i] *= tmp
