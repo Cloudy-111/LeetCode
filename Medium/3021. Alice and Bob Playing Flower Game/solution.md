@@ -18,4 +18,5 @@ Return the number of possible pairs (x, y) that satisfy the conditions mentioned
 To get the pair x, y that satisfies the problem: Alice goes first, Alice always wins, then the sum of x + y will always have to be an odd number
 
 And if the sum of 2 numbers is odd, then one of the two numbers is even, the other is odd
-So we just need to calculate the sum of the pairs created from even and odd pairs, which will be the sum of the pairs created from odd numbers > 1, < n and even numbers > 1, < m and vice versa.
+
+### So we just need to calculate the sum of the pairs created from even and odd pairs, which will be the sum of the pairs created from odd numbers > 1, < n and even numbers > 1, < m and vice versa.
