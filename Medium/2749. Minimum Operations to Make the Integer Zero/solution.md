@@ -25,7 +25,9 @@ Now, the remaining problem is the right side. We call sum of the right side is e
 ### Notice that, the right side of the expression is very similar to the binary representation of a number.
 
 Example:
+
 n = 9 = 2^3 + 2^0 -> bit representation: 1001
+
 n = 15 = 2^3 + 2^2 + 2^1 + 2^0 -> bit representation: 1111
 
 So X can be represented as the sum of powers of 2 as the representation to find the binary form of X, except that the terms in the sum can be the same
@@ -38,8 +40,8 @@ n = 9 = 2^3 + 2^0 = 2^2 + 2^2 + 2^0
 
 Let x = number of 1 bits in the binary representation of X.
 
-If x > k then X will never be represented by k powers of 2
-If x is equal to k then it will return k because it will definitely be represented correctly
-But if x < k, we can split larger powers into smaller ones until we reach k terms
+- If x > k then X will never be represented by k powers of 2
+- If x is equal to k then it will return k because it will definitely be represented correctly
+- But if x < k, we can split larger powers into smaller ones until we reach k terms
 
 ### Note that there is a special case that if X == 1, k > 1, then X will be represented as 2^0, it cannot be decomposed into the sum of 2 numbers with smaller exponents then we will return -1
