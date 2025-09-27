@@ -21,9 +21,11 @@ If we have 3 point A(x1, y1), B(x2, y2), C(x3, y3) then scalar product of them i
 
 ### S = (x2 ​− x1) \* (y3 − y1) − (y2 − y1) \* (x3 − x1)
 
-if S < 0: C is on the right side of line AB
-if S > 0: C is on the left side of line AB
-if S == 0: C lies on line AB
+If S < 0: C is on the right side of line AB
+
+If S > 0: C is on the left side of line AB
+
+If S == 0: C lies on line AB
 
 We traverse from left to right of the sorted array of points, so we always go left or straight from the lowest point to the highest point (S >= 0) to create the lower_hull
 and the same goes for the reverse
